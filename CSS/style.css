@@ -1,0 +1,865 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: rgba(17, 228, 231, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.log {
+  width: 150px;
+  height: 55px;
+  margin-left: 100px;
+  float: left;
+}
+.listHeader {
+  list-style: none;
+  float: right;
+  margin-right:100px ;
+  margin-top: 15px;
+}
+.listHeader li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.listHeader li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.listHeader  li  a::after {
+  content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: blue;
+    margin-top: 2px;
+    transition: .5s;
+}
+.listHeader  li  a:hover:after {
+  width: 100%;
+}
+.listHeader  li  a.UndLine:after {
+  width: 100%;
+}
+.listHeader  li  .blogli {
+  position: absolute;
+  visibility: hidden;
+  width: 120px;
+  height: 40px;
+  background-color: rgba(4, 127, 228, 0.8);
+  text-align: center;
+  text-transform: capitalize;
+  transition: 1s;
+  opacity: 0;
+  
+  
+}
+.blogli li {
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 900;
+
+}
+.listHeader  li:hover  .blogli {
+  visibility: visible;
+  opacity: 1;
+} 
+
+/* //// End Header Style //// */
+
+.HomePage {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/Bakery-Coffee-Studio-2Pi-Architecture.jpg);
+  background-size: cover;
+  position: relative;
+}
+.HomeImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.HomeInfo {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.HomeSubject {
+  color: #fff;
+  font-size: 50px;
+}
+.HomePar {
+  margin: 25px  0px;
+  color:#fff;
+  letter-spacing: 2px;
+}
+.HomeButt {
+  width: 200px;
+  padding: 15px 0px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.Homebut2 {
+  background-color: rgb(13, 84, 85);
+  color:aqua;
+  margin-left: 20px;
+}
+.HomeButt:hover {
+  opacity: 0.5;
+}
+
+/* //// End Home Style //// */
+
+.about_contenar {
+  width: 100%;
+  background-color:#DCF2F1;
+  overflow: auto;
+}
+.about_title {
+  text-align: center;
+  margin-top: 75px;
+}
+.abouttit1 {
+  font-size: 40px;
+  color:blue;
+}
+.aboutLine {
+  width: 15%;
+  height: 5px;
+  background-color: blue;
+  margin: 10px auto;
+}
+
+.aboutContent {
+  width: 80%;
+  margin: 75px auto;
+  overflow: hidden;
+}
+.aboutDiv {
+  float: left;
+  width: 30%;
+  height: 250px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 25px 18px;
+  border-radius: 50px 12px;
+}
+.abutMid {
+  margin: 0px 5%;
+}
+.aboutContent i {
+  color: blue;
+  font-size: 35px;
+}
+.about_ti {
+  padding: 10px 0px;
+  text-transform:uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+.about_par {
+  color: rgb(49, 47, 47);
+  text-transform: capitalize;
+  padding: 10px 0px;
+}
+.about_bt {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+
+}
+.aboutDiv:hover .about_ti {
+  color: #fff;
+  transition: 1s;
+}
+.aboutDiv:hover .about_par {
+  color:beige;
+  transition: 1s;
+}
+.aboutDiv:hover .about_bt {
+  color: aqua;
+  transition: 1s;
+}
+.aboutDiv {
+  position: relative;
+  z-index: 1;
+}
+.aboutDiv::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 50px 12px;
+}
+.aboutDiv:hover::after  {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6 ;
+}
+/* //// End About Style //// */
+
+.WorkContainer {
+  padding: 1px 0;
+  background-color: #EEF5FF;
+}
+.WorkMain {
+  width: 80%;
+  margin: 75px auto;
+}
+.WorkContent {
+  overflow: hidden;
+}
+.WorkSection {
+  float: left;
+  width: 30%;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+  background-color: bisque;
+  border-radius: 4px;
+}
+.WorkSection img {
+  width: 80%;
+  height: 200px;
+}
+.Secenter {
+  margin: 0px 5%;
+}
+.WorkSection .workImg {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  z-index: 1;
+  border-radius: 4px;
+}
+.WorkSection:hover .workImg  {
+  visibility: visible;
+  opacity: 1 ;
+}
+.workImg .worksInfo {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.workImg .worksInfoH3 {
+  display: block;
+  color: rgb(33, 240, 240);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.workImg .worksInfoP {
+  display: block;
+  color: rgb(236, 243, 243);
+  margin-bottom: 10px;
+}
+.workImg a {
+  display: inline-block;
+  position: relative;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(15, 230, 238, 0.9);
+  color: rgb(9, 44, 243);
+  border-radius: 25%;
+}
+.workImg a i {
+  margin-top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* //// End Works Style //// */
+
+.OfferContainer {
+  background-color:rgba(205, 250, 213, 0.4) ;
+  padding-top: 2px;
+}
+.OfferContent {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  padding: 75px 0px;
+  
+}
+.offerSection {
+  width: 30%;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  float: left;
+  margin-bottom: 50px;
+  padding: 25px 20px 25px 80px;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px 25px;
+}
+.offerSection .OfferIC {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: blue;
+  font-size: 40px;
+}
+.offerSection .OfferTi {
+  padding-bottom: 25px;
+}
+.mid {
+  margin: 0 5%;
+}
+.Offer_Layer {
+  position: relative;
+  z-index: 1;
+}
+
+.Offer_Layer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  z-index: -1;
+  border-radius: 5px 25px;
+}
+.Offer_Layer:hover:after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1 ;
+}
+.Offer_Layer:hover .OfferTi {
+  color: #fff;
+  transition: 1s;
+}
+.Offer_Layer:hover .OfferP {
+  color:beige;
+  transition: 1s;
+}
+
+/* //// End Offer Style //// */
+
+.ChooseUsContainer {
+  background-color: #F9F3CC;
+}
+.ChooseUsContent {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 120px;
+}
+.ChossUsSection {
+  width: 50%;
+  margin: 100px 100px 0 0;
+  float: left;
+  
+}
+.ChossUstit1 {
+  font-size: 30px;
+  color:blue;
+}
+.ChossUsLine {
+  width: 100px;
+  height: 5px;
+  background-color: blue;
+  margin: 15px 0;
+}
+.ChooseUsImg {
+  background-color: #d47777;
+  width: 35%;
+  float: left;
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+
+}
+.ChooseUsImg img {
+  width: 80%;
+  height: 400px;
+}
+.ChoosUsP {
+  margin-top: 40px;
+  color: #534f4f;
+  font-size: large;
+}
+.ChoosUsList {
+  color: #534f4f;
+  
+}
+.ChoosUsList li i {
+  margin-top: 20px;
+  line-height: 2;
+  color: #6195ff;
+}
+.ballimg {
+  position: relative;
+
+}
+.imgScroll {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+.imgScroll li.done {
+  background-color: #336fe6;
+}
+.imgScroll li:hover {
+  background-color: #336fe6;
+}
+.imgScroll li {
+  width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #918c8c;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.pointclear {
+  clear: both;
+}
+/* //////////////// */
+
+.totalNumbersContainer {
+  width: 100%;
+  height: 400px;
+  background-image: url(../image/number3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.totalNumbersContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.totalNumbersINFO {
+  width: 100%;
+  margin: auto;
+}
+.TotalIcons {
+  overflow: hidden;
+  padding: 150px;
+}
+
+.totalNumbersIcon {
+  width: 25%;
+  float: left;
+  text-align: center;
+  z-index: -1;
+  color: #fff;
+
+}
+.totalNumbersIcon i {
+  color: #6195ff;
+  font-size: 38px;
+  line-height: 2;
+}
+.totalNumbersclienth {
+  color: aliceblue;
+  font-size: 28px;
+}
+/* ////////////////////////////// */
+
+.priceContainer {
+  width: 100%;
+  background-color: rgba(187, 226, 236, 0.4);
+}
+.priceContent {
+  padding: 25px;
+}
+.PriceSection {
+  width: 80%;
+  margin: 75px auto;
+  overflow: auto;
+}
+.pricePlan {
+  width: 30%;
+  border: 2px solid black;
+  float: left;
+  padding: 40px 0px;
+  position: relative;
+}
+
+.PRICMID {
+  margin: 0px 5%;
+}
+.PlanName {
+  text-align: center;
+  text-transform: uppercase;
+  color: gray;
+}
+.PlanPriceMonth {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(27, 159, 219);
+  border-radius: 50%;
+  text-align: center;
+  margin: 25px auto;
+  padding: 10px 0px;
+}
+.PlanPriceMonth .monthH {
+  font-size: 45px;
+}
+.pricePlan:hover .monthH {
+  color: rgb(228, 98, 98);
+}
+.PlanPriceMonth .monthP {
+  font-weight:600;
+}
+.pricePlan:hover .monthP {
+  color: rgb(228, 98, 98);
+}
+.pricePlan .PriceList {
+  list-style: none;
+  text-align: center;
+  line-height: 2;
+}
+.PlanBut {
+  border: 2px solid rgb(32, 227, 241);
+  margin: auto;
+  margin-top: 15px;
+  display: block;
+  padding: 2px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 17px;
+  background-color: rgba(0, 127, 115, 0.4);
+  cursor: pointer;
+}
+.pricePlan::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+.pricePlan:hover:after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1 ;
+}
+.pricePlan:hover .PlanName {
+  color: #d47777;
+}
+/* /////////////////////// */
+
+.OwnerContainer {
+  width: 100%;
+  height: 400px;
+  background-image: url(../image/number4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.OwnerContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.OwnerSection {
+  width: 80%;
+  margin: auto;
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+.OwnerName {
+  width: 35%;
+  float: left;
+  margin: auto;
+}
+.OwnerMaid {
+  margin: 0px 5%;
+}
+.OwnerImg {
+  width: 75px;
+  height: 75px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 15px;
+  text-align: center;
+  background-color: beige;
+}
+.OwnerInfo {
+  margin: 0px 20px;
+  padding: 0px 50px;
+}
+.OwnerPer {
+  margin-top: 50px;
+}
+.OwnerSection .NameTitleOwner, .OwnerPer2 {
+  color: #fff;
+}
+.OwnerSection .despNameOwner {
+  color: #6195ff;
+}
+/* //////////////////////////////////////////// */
+.TeamContainer {
+  background-color: rgba(188, 207, 245, 0.4);
+  padding: 2px;
+}
+.TeamContent {
+  width: 80%;
+  overflow: auto;
+  margin: 75px auto;
+}
+.TeamSection {
+  float: left;
+  width: 30%;
+  background-color: #FFF3DA;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+.TeamMaid {
+  margin: 0px 5%;
+}
+.TeamImg {
+  background-color: aquamarine;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+.TeamImg img {
+  width: 100%;
+}
+.TeamIcons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s;
+}
+.TeamSection:hover .TeamIcons {
+  opacity: 1;
+  visibility: visible;
+}
+.TeamIcons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color:rgb(33, 240, 240);
+  color: #ffffff;
+  margin-left: auto;
+}
+.TeamIcons a i {
+  line-height: 40px;
+  font-size: 21px;
+}
+.TeamInfoH3 {
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+.TeamInfoP {
+  color: #999;
+  text-transform: uppercase;
+}
+.TeamSection:hover .TeamInfoH3 {
+  color: #320ae4;
+}
+.TeamSection:hover .TeamInfoP {
+  color: #047fe4;
+}
+.TeamSection::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  transition: 1s;
+  opacity: 0;
+}
+.TeamSection:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5 ;
+}
+/* ////////////////////////////// */
+.NewsContainer {
+  width: 80%;
+  margin: auto;
+}
+.NewsContent {
+  overflow: auto;
+  margin: 75px 0px;
+}
+.NewsSection {
+  float: left;
+  width: 30%;
+  background-color: #C4E4FF;
+  padding: 0px 20px;
+  position: relative;
+}
+.NewsMid {
+  margin: 0px 5%;
+}
+.NewsImg {
+  width: 100%;
+  margin-left: 20px;
+}
+.NewsImg img {
+  height: 250px;
+}
+.NewsIcons {
+  padding: 20px 0px;
+  
+}
+.NewsList {
+  list-style: none;
+  margin: 10px 0px;
+}
+.NewsList li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.NewsList li i {
+  color: #047fe4;
+}
+.NewsInfo {
+  margin: 15px 0px;
+}
+.NewsInfoH3 {
+  margin: 15px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.NewsInfoP {
+  margin: 20px 0px;
+  font-size: 18px;
+  color:#918c8c;
+  line-height: 1.5;
+}
+.CLickNews {
+  text-decoration: none;
+  color: #6195ff;
+  font-size: 22px;
+}
+.NewsSection::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 2s;
+}
+.NewsSection:hover:after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5 ;
+}
+/* /////////////////////////////////////////////// */
+
+.FooterContainer {
+  width: 100%;
+  height: 350px;
+  background-color: rgba(44, 120, 101, 0.7);
+  /* margin: auto; */
+}
+.FooterContent {
+  margin: auto;
+  text-align: center;
+}
+.FooterImg {
+  margin: 20px 0px;
+}
+.FooterList li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6195ff;
+  margin-bottom: 30px;
+  margin: 20px 8px;
+}
+.FooterList li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color:#fff;
+  font-size: 25px;
+  padding-top: 12px;
+}
+.FooterP {
+  color: #fff;
+}
